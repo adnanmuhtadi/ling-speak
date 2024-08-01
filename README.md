@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Links to Features on the App
+
+To convert the provided text into tables, you can structure it with relevant headers and content. Here’s how it would look:
+
+### Technologies Overview
+
+| **Technology**  | **Description**  | **Project Use** 
+|-----------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| [Next.JS](https://nextjs.org/)     | Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components. |
+[Tailwind](https://tailwindcss.com/docs/guides/nextjs)    | CSS Framework - A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.|
+[Aceternity UI](https://ui.aceternity.com/components/grid-and-dot-backgrounds) | Copy paste the most trending components and use them in your websites without having to worry about styling and animations. | Background |
+[Preline](https://preline.co/docs/index.html) | Preline UI is an open-source Tailwind CSS components library for any needs. Comes with UI examples & blocks, templates, plugins, Figma design system and more. |  |
+[Tabler](https://tabler.io/icons) | Free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful. | Icons |
