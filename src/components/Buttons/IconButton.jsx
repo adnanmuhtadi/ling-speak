@@ -6,7 +6,7 @@ const IconButton = ({ Icon, onClick }) => (
     className="cursor-pointer flex items-center space-x-2" // Add styles: cursor pointer, flex container, space between items
     onClick={onClick} // Set the onClick handler
   >
-    <Icon size={22} /> // Render the passed Icon component with size 22
+    <Icon size={22} /> {/* Render the passed Icon component with size 22 */}
   </span>
 );
 
