@@ -37,8 +37,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Links to Features on the App
 
-To convert the provided text into tables, you can structure it with relevant headers and content. Here’s how it would look:
-
 ### Technologies Overview
 
 | **Technology**  | **Description**  | **Project Use** 
