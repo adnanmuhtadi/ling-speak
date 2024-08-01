@@ -10,6 +10,12 @@ import "./globals.css";
 // Import the Script component from Next.js for embedding external scripts
 import Script from 'next/script';
 
+import * as Alerty from "@alerty/nextjs";
+
+Alerty.configure({
+  dsn: "https://01j4727jpvm35gsdrwffrr3vf6@ingest.alerty.ai/54b4a59e-9ec4-4c29-bbc1-ae50a1e81727",
+});
+
 // Configure the Inter font to include only the Latin subset
 const inter = Inter({ subsets: ["latin"] });
 

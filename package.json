@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@alerty/nextjs": "^0.0.17",
     "@tabler/icons-react": "^3.11.0",
     "env": "^0.0.2",
     "lodash.debounce": "^4.0.8",
