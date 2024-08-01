@@ -1,6 +1,8 @@
-"use client";
-import "regenerator-runtime/runtime";
-import React, { useState, ChangeEvent } from "react";
+"use client"; // Indicates that this file is a client-side module
+import "regenerator-runtime/runtime"; // Polyfill for async functions
+import React, { useState, ChangeEvent } from "react"; // Import React, useState, and ChangeEvent
+
+// Importing various icons from the @tabler/icons-react library
 import {
   IconCopy,
   IconStar,
@@ -8,21 +10,25 @@ import {
   IconThumbUp,
   IconVolume,
 } from "@tabler/icons-react";
+
+// Importing components from the application's components directory
 import SpeechRecognitionComponent from "@/components/SpeechRecognition/SpeechRecognition";
 import TextArea from "@/components/Inputs/TextArea";
 import FileUpload from "@/components/Inputs/FileUpload";
 import LinkPaste from "@/components/Inputs/LinkPaste";
 import LanguageSelector from "@/components/Inputs/LanguageSelector";
-import useTranslate from "@/hooks/useTranslate";
-import { rtfToText } from "@/utils/rtfToText";
+import useTranslate from "@/hooks/useTranslate"; // Importing custom hook for translation
+import { rtfToText } from "@/utils/rtfToText"; // Importing utility function to convert RTF to text
 
-import SvgDecorations from "@/components/SvgDecorations";
-import CategoryLinks from "@/components/categoryLinks";
+import SvgDecorations from "@/components/SvgDecorations"; // Importing SVG decorations component
+import CategoryLinks from "@/components/categoryLinks"; // Importing category links component
 
+// Define the Home component as a React Functional Component
 const Home: React.FC = () => {
-  const [sourceText, setSourceText] = useState<string>("");
-  const [copied, setCopied] = useState<boolean>(false);
-  const [favorite, setFavorite] = useState<boolean>(false);
+  // Define state variables
+  const [sourceText, setSourceText] = useState<string>(""); // State for source text
+  const [copied, setCopied] = useState<boolean>(false); // State for copied status
+  const [favorite, setFavorite] = useState<boolean>(false); // State for favorite status
   const [languages] = useState<string[]>([
     "English",
     "Arabic",
@@ -31,11 +37,13 @@ const Home: React.FC = () => {
     "French",
     "German",
     "Chinese",
-  ]);
-  const [selectedLanguage, setSelectedLanguage] = useState<string>("Spanish");
+  ]); // State for available languages
+  const [selectedLanguage, setSelectedLanguage] = useState<string>("Spanish"); // State for selected language
 
+  // Use custom hook to get the translated text
   const targetText = useTranslate(sourceText, selectedLanguage);
 
+  // Handle file upload and convert RTF content to text
   const handleFileUpload = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
@@ -49,6 +57,7 @@ const Home: React.FC = () => {
     }
   };
 
+  // Handle link paste and fetch content from the link
   const handleLinkPaste = async (e: ChangeEvent<HTMLInputElement>) => {
     const link = e.target.value;
     try {
@@ -60,6 +69,7 @@ const Home: React.FC = () => {
     }
   };
 
+  // Copy the translated text to clipboard
   const handleCopyToClipboard = () => {
     navigator.clipboard.writeText(targetText);
     setCopied(true);
@@ -74,6 +84,7 @@ const Home: React.FC = () => {
     // Implement dislike logic
   };
 
+  // Handle favorite functionality and save to localStorage
   const handleFavorite = () => {
     setFavorite(!favorite);
     if (!favorite) {
@@ -83,11 +94,13 @@ const Home: React.FC = () => {
     }
   };
 
+  // Play back the provided text using SpeechSynthesis API
   const handleAudioPlayback = (text: string) => {
     const utterance = new SpeechSynthesisUtterance(text);
     window.speechSynthesis.speak(utterance);
   };
 
+  // Return the JSX for the Home component
   return (
     <div className="w-full bg-black bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
@@ -136,7 +149,7 @@ const Home: React.FC = () => {
                   <TextArea
                     id="target-language"
                     value={targetText}
-                    onChange={() => {}}
+                    onChange={() => {}} // No-op to prevent editing of target text
                     placeholder="Target Language"
                   />
                   <div className="flex flex-row justify-between w-full">
@@ -179,4 +192,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Home; // Export the Home component as default
