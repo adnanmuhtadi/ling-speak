@@ -50,3 +50,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 [shadcn](https://shadcn.com/docs/components) | Beautifully designed components that you can copy and paste into your apps. | Components |
 [OpenAI](https://openai.com/index/chatgpt/) | We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it possible for ChatGPT to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests. | Responses to Translation |
 [Youtube Tutorial](https://youtu.be/dGHFV_RMGag?si=vx_c3rLvEvaJNH7d) | The tutorial that was follows | The application
+[Vercel Hosting](https://vercel.com/home) | Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web. | Hosting the application as it stores Environment Variables and Keys
