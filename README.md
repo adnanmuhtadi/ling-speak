@@ -48,3 +48,7 @@ To convert the provided text into tables, you can structure it with relevant hea
 [Aceternity UI](https://ui.aceternity.com/components/grid-and-dot-backgrounds) | Copy paste the most trending components and use them in your websites without having to worry about styling and animations. | Background |
 [Preline](https://preline.co/docs/index.html) | Preline UI is an open-source Tailwind CSS components library for any needs. Comes with UI examples & blocks, templates, plugins, Figma design system and more. |  |
 [Tabler](https://tabler.io/icons) | Free and open source icons designed to make your website or app attractive, visually consistent and simply beautiful. | Icons |
+[npm](https://www.npmjs.com/) | We're GitHub, the company behind the npm Registry and npm CLI. We offer those to the community for free, but our day job is building and selling useful tools for developers like you. | Scripts |
+[shadcn](https://shadcn.com/docs/components) | Beautifully designed components that you can copy and paste into your apps. | Components |
+[OpenAI](https://openai.com/index/chatgpt/) | We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it possible for ChatGPT to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests. | Responses to Translation |
+[Youtube Tutorial](https://youtu.be/dGHFV_RMGag?si=vx_c3rLvEvaJNH7d) | The tutorial that was follows | The application
